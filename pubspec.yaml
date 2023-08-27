@@ -1,0 +1,29 @@
+name: widget_book
+description: A new Flutter project.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=2.19.4 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  design_system:
+    git:
+      url: git@bitbucket.org:sumerlabs/sumer-app-design-system.git
+      ref: master
+
+  widgetbook: ^3.1.0
+  widgetbook_annotation: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  widgetbook_generator: ^3.0.0
+  build_runner: ^2.3.3
+
+flutter:
+  uses-material-design: true
