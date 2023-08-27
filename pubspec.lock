@@ -173,9 +173,9 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: master
-      resolved-ref: "3892ef868b330db98447e85d4e34f0f3e37c0960"
-      url: "git@bitbucket.org:sumerlabs/sumer-app-design-system.git"
+      ref: "0.0.2"
+      resolved-ref: "6e9641ce81155032c2f0e6bda90bc59b76f71401"
+      url: "https://bitbucket.org/sumerlabs/sumer-app-design-system.git"
     source: git
     version: "0.0.2"
   device_frame:
