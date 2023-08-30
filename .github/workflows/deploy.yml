@@ -28,6 +28,10 @@ jobs:
 
       - run: flutter pub get
 
+      # Run build_runner
+      - name: Run Build Runner
+        run: flutter pub run build_runner build
+
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
           baseHref: /
