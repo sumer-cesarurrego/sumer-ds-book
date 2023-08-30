@@ -34,5 +34,5 @@ jobs:
 
       - uses: bluefireteam/flutter-gh-pages@v7
         with:
-          baseHref: /
+          baseHref: /sumer-ds-book/
 
