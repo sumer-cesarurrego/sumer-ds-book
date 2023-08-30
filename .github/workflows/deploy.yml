@@ -26,18 +26,9 @@ jobs:
         run: |
           git clone https://$BITBUCKET_USERNAME:$BITBUCKET_PASSWORD@bitbucket.org/sumerlabs/sumer-app-design-system.git
 
-      - run: flutter config --enable-web
       - run: flutter pub get
 
-        # Run build_runner
-      - name: Run Build Runner
-        run: flutter pub run build_runner build
-
-      - run: flutter build web --release
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: bluefireteam/flutter-gh-pages@v7
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: build/web
+          baseHref: /
 
